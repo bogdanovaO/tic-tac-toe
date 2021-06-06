@@ -4,8 +4,7 @@ const miniCss = require('mini-css-extract-plugin');
 
 
 module.exports = {
-    mode: "development",
-    // the rest of your webpack.config.js
+    // mode: "development",
     entry: {
         main: path.resolve(__dirname, './src/index.js'),
     },
