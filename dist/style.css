@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Mono&display=swap);
+body {
+  background: #cfd4ea;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  opacity: 1;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+}
+
+.start {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+}
+.start__content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.start__btn {
+  background: transparent;
+  height: 100px;
+  color: #fff;
+  border-style: none;
+  font-size: 40px;
+  margin-bottom: 10px;
+  transform: scale(0);
+  font-family: "Roboto Mono", monospace;
+}
+.start__input {
+  height: 100px;
+}
+
+.game {
+  z-index: 2;
+  -webkit-box-shadow: 12px 12px 0px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 12px 12px 0px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 12px 12px 0px 2px rgba(34, 60, 80, 0.2);
+}
+
+.bordSize {
+  display: flex;
+  justify-content: space-between;
+  width: 120%;
+}
+.bordSize > div {
+  color: #e8e69f;
+  background: aqua;
+  height: 50px;
+  width: 90px;
+  line-height: 50px;
+  background: #f1f1f1;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.board {
+  width: 0;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  background: #fff;
+}
+.board > tr td {
+  border: 1px solid #000;
+}
