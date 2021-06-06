@@ -9,7 +9,7 @@ module.exports = {
         main: path.resolve(__dirname, './src/index.js'),
     },
     output: {
-      path: path.resolve(__dirname, './dist'),
+      path: path.resolve(__dirname, './docs'),
       filename: 'bundle.js',
   },
   plugins: [
@@ -25,7 +25,7 @@ module.exports = {
 
 devServer: {
   publicPath: "/",
-  contentBase: "./dist",
+  contentBase: "./docs",
   port: 8000,
   historyApiFallback: true,
   hot: true,
