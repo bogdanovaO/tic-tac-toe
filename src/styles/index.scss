@@ -213,11 +213,16 @@ h1 {
 }
 
 @media screen and(max-width: 450px)  {
+<<<<<<< HEAD
   .start {
     justify-content: space-evenly;
   }
   .board {
     margin: 10px 0;   
+=======
+  .board {
+  margin: 10px 0;
+>>>>>>> 3d4d58eda1372d19183b0f2b6f7d42c3d6e3fb13
   }
   .X {
     display: none;
@@ -228,7 +233,11 @@ h1 {
 }
 @media screen and(max-width: 750px)  {
   .board {
+<<<<<<< HEAD
     margin: 10px 0;
+=======
+  margin: 10px 0;
+>>>>>>> 3d4d58eda1372d19183b0f2b6f7d42c3d6e3fb13
   }
 
 }
