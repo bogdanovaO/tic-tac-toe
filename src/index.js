@@ -7,6 +7,7 @@ const gameTitle = document.querySelector('h1');
 const startButton = document.querySelector('.start__btn');
 const reStartButton = document.querySelector('.reStart');
 const start = document.querySelector('.start__content');
+const startInput = document.querySelector('.start__input');
 const n = document.querySelector('.n');
 
 
@@ -28,12 +29,18 @@ appear()
 function displayGamePage() {
   reStartButton.style.display = "block";
   startButton.style.display = "none";
+  startInput.style.display = "none";
   start.style.position = "absolute";
   start.style.top = "5%";
-  n.style.display = "none";
   let board = document.querySelector(".board");
-  board.style.width = "70vh";
-  board.style.height = "70vh";
+  // alert(document.querySelector('body').clientWidth < 500)
+  if (document.querySelector('body').clientWidth < 370) {
+    board.style.height = "100vmin";
+    board.style.width = "100vmin";
+  } else {
+    board.style.height = "70vmin";
+    board.style.width = "70vmin";
+  }
   let X = document.createElement('div');
   let O = document.createElement('div');
   X.innerHTML = "X";
