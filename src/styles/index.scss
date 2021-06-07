@@ -52,7 +52,6 @@ h1 {
     align-items: center;
     justify-content: center;
   }
-
   &__btn {
     @extend %btn;
     height: 100px;
@@ -62,7 +61,6 @@ h1 {
     box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
     animation: pulse 5s infinite;
   }
-
   &__input {
     display: flex;
   }
@@ -70,6 +68,7 @@ h1 {
 
 .n {
   border: none;
+  border-radius: 3px;
   font-size: 16px;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
@@ -113,6 +112,7 @@ h1 {
 
 .nFactor {
   padding: 17px;
+  border-radius: 3px;
   width: 60px;
   height: 60px;
   background: #fff;
@@ -209,4 +209,22 @@ h1 {
     -moz-box-shadow: 0 0 0 0 rgb(255, 116, 159);
     box-shadow: 0 0 0 0 rgb(255, 116, 159);
   }
+}
+
+@media screen and(max-width: 450px)  {
+  .board {
+  margin: 10px 0;
+  }
+  .X {
+    display: none;
+  }
+  .O {
+    display: none;
+  }
+}
+@media screen and(max-width: 750px)  {
+  .board {
+  margin: 10px 0;
+  }
+
 }
